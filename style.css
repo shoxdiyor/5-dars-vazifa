@@ -1,0 +1,283 @@
+/* plus-jakarta-sans-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/plus-jakarta-sans-v8-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* plus-jakarta-sans-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/plus-jakarta-sans-v8-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  line-height: 1.6;
+  color: #030303;
+  background: #fff7f0;
+}
+
+/* Layout */
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.logo {
+  width: 64px;
+  height: 64px;
+  background: #030303;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/* Buttons */
+.cta-button {
+  background: #030303;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 28px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background: #755cde;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 4rem 1rem;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Services Grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  padding: 0 1rem;
+}
+
+.service-card {
+  border-radius: 8px;
+  padding: 1.5rem;
+  color: white;
+  position: relative;
+  min-height: 180px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.service-card.large {
+  grid-column: span 2;
+  grid-row: span 2;
+  min-height: 360px;
+}
+
+.text {
+  font-size: 20px;
+  font-style: inherit;
+}
+
+.img1 {
+  position: absolute;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.img2 {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+.img3 {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+.img4 {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+
+.img5 {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+.img6 {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+
+.service-card.purple {
+  background: #755cde;
+}
+.service-card.orange {
+  background: #f6a560;
+}
+.service-card.pink {
+  background: #f39e9e;
+}
+.service-card.teal {
+  background: #61c4b7;
+}
+.service-card.coral {
+  background: #eb7565;
+}
+.service-card.purple-dark {
+  background: #552049;
+}
+
+/* About Section */
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  padding: 4rem 1rem;
+  align-items: center;
+}
+
+.about-content h2 {
+  font-size: 30px;
+  margin-top: 100px;
+}
+
+.profile-image {
+  overflow: hidden;
+}
+
+/* Portfolio Section */
+.portfolio {
+  padding: 4rem 1rem;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.portfolio-item {
+  border-radius: 8px;
+  overflow: hidden;
+}
+.portfolio .h2 {
+  text-align: center;
+}
+
+.portfolio-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.nav-button {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: none;
+  background: #030303;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+  background: #755cde;
+}
+
+/* Book Call Section */
+.book-call {
+  background: #030303;
+  color: white;
+  padding: 4rem;
+  border-radius: 10px;
+  margin: 4rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.call-content {
+  max-width: 540px;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .book-call {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card.large {
+    grid-column: auto;
+    grid-row: auto;
+  }
+}
